@@ -1,0 +1,9 @@
+{
+    "name": "drdfunctionapp",
+    "version": "1.0.0",
+    "description": "Sample Azure Function App",
+    "main": "index.js",
+    "dependencies": {
+        "azure-functions": "^3.0.0"
+    }
+}
