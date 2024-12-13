@@ -46,7 +46,7 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     needs: build
-    __environment__
+    
     
     steps:
       - name: Download artifact from build job
@@ -64,4 +64,4 @@ jobs:
           app-name: 'drdfunctionapp'
           slot-name: 'Production'
           package: ${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}
-          publish-profile: ${{ secrets.AzureAppService_PublishProfile_5005911e22d5460383859c2d505e3bc9 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_013BEB7D74774D6981C08E88379C09CB }}
